@@ -1,0 +1,54 @@
+<html>
+
+<head>
+   <title>ClipHeap</title>
+   <link rel='stylesheet' href='styles/grid.css'>
+   <link rel='stylesheet' href='styles/template.css'>
+   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+
+<body>
+   <div id='root'>
+      <div class='container-fluid'>
+         <div class='row'>
+            <div class='col-xl-3 col navigation-left'>
+               <div class='logo'>CH</div>
+               <div class='nav center'>
+                  <a class='nav-1'>Channels</a><a class='nav-2'>Videos</a><a class='nav-3'>Library</a>
+               </div>
+            </div>
+            <div class='col-xl-6 d-none d-xl-block'></div>
+            <div class='col-xl-3 col navigation-right'>
+               <div class='search-container'>
+                  <input class='search-field' type='text' placeholder='Search'>
+               </div>
+               <img class='channel-logo' src='../public/files/channel.jpg'>
+            </div>
+         </div>
+         <div class='subscriptions'>
+            <img src='../public/files/channel.jpg'>
+            <img src='../public/files/channel.jpg'>
+            <img src='../public/files/channel.jpg'>
+            <img src='../public/files/channel.jpg'>
+         </div>
+         <div class='row'>
+            <div class='col view'>
+               <div class='view' id='code'>
+                  
+               </div>
+               <canvas id='videoBack' class='back'></canvas>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script>
+      var canvas = document.getElementById("videoBack");
+      var ctx = canvas.getContext("2d");
+      ctx.fillStyle = "#ccc3f7";
+      ctx.fillRect(0, 0, 1111, 1111);
+      code = document.documentElement.innerHTML;
+      document.getElementById('code').innerHTML = 'sd';
+   </script>
+</body>
+
+</html>

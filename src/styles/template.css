@@ -1,0 +1,146 @@
+html,
+body {
+   margin: 0;
+   font-family: 'Source Sans Pro';
+   font-size: 16px;
+   min-width: 365px;
+   height: 100%;
+}
+
+#root {
+   background: linear-gradient(to bottom right, #e3eeff, #f3e7e9);
+   height: 100%;
+}
+
+.navigation-left {
+   padding: 0;
+   height: 60px;
+   display: flex;
+   align-items: center;
+}
+
+.center {
+   text-align: center;
+}
+
+.logo {
+   padding-top: 9px;
+   min-width: 60px;
+   height: 100%;
+   display: inline-block;
+   text-align: center;
+   background-color: deepskyblue;
+   color: #fff;
+   font-weight: 700;
+   font-size: 2em;
+}
+
+.nav {
+   min-width: 270px;
+   font-weight: 300;
+   display: inline-block;
+   margin-left: 10px;
+}
+
+.nav-1,
+.nav-2,
+.nav-3 {
+   line-height: 2.1;
+   padding-bottom: 1px;
+   display: inline-block;
+   width: 90px;
+   background-color: #fff;
+   transition: background-color 0.3s;
+   cursor: pointer;
+   z-index: 1;
+}
+
+.nav-1:hover,
+.nav-2:hover,
+.nav-3:hover {
+   background-color: gainsboro;
+}
+
+.nav-1:active,
+.nav-2:active,
+.nav-3:active {
+   background-color: deepskyblue;
+   color: #fff;
+   transition: none;
+}
+
+.nav-1 {
+   border-radius: 7px 0 0 7px;
+}
+
+.nav-3 {
+   border-radius: 0 7px 7px 0;
+}
+
+.cl-blue {
+   color: #1badf8;
+}
+
+.navigation-right{
+   justify-content: flex-end;
+   height: 60px;
+   display: flex;
+   align-items: center;
+}
+
+.search-container{
+   margin-right: 15px;
+}
+
+.search-field{
+   font-family: 'Source Sans Pro';
+   font-weight: 400;
+   padding: 2px 30px 2px 15px;
+   border: none;
+   border-radius: 15px;
+   height: 30px;
+   width: 300px;
+}
+
+.channel-logo{
+   height: 36px;
+   width: 36px;
+   border-radius: 18px;
+}
+
+.view{
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0;
+   height: 100%;
+}
+
+.back{
+   margin: 0 22px 22px 60px;
+   width: calc(100% - 82px);
+   height: calc(1200% - 22px);
+}
+
+.body{
+   height: calc(100% - 60px);
+}
+
+.subscriptions{
+   position: absolute;
+   left: 0;
+   width: 60px;
+   text-align: center;
+}
+
+.subscriptions img{
+   margin: 7px;
+   height: 44px;
+   width: 44px;
+   border-radius: 22px;
+}
+.view{
+   position: absolute;
+   height: 90%;
+}
